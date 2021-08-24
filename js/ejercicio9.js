@@ -2,7 +2,6 @@ let frase = prompt("ingrese una frase");
 console.log (frase.toLocaleLowerCase());
 frase = frase.toLocaleLowerCase();
 console.log(frase.length);
-
 for(let vocal = 0; vocal <frase.length ; vocal++){
     console.log (frase.charAt(vocal));
     if (frase.charAt(vocal) == "a" || frase.charAt(vocal) == "e" || frase.charAt(vocal) == "i" ||
