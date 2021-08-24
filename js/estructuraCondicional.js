@@ -13,6 +13,4 @@ if (num1>num2){
     } else {
         document.write ("Los numeros son iguales" + num1);
     }
-    
-
 
