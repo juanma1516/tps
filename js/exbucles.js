@@ -17,7 +17,7 @@ if (num1 >=18){
 10: Sobresaliente */
 
 let num1 =(prompt("ingrese nota"));
-if (num1 num1>=0 && num1<=2){
+if (num1 >=0 && num1<=2){
     console.log ("Muy deficiente");
 } else if( num1>=3 && num1<=4) {
     console.log ("Insuficiente");}
@@ -34,6 +34,5 @@ else if( num1>=8 && num1<=9) {
 else if (num1==10){ 
     console.log ("sobresaliente");
 }
-else if (num1 <0 && num1 >10){
+else (num1 <0 && num1 >10)
     console.log ("Numero Erroneo")
-}
