@@ -30,3 +30,19 @@ document.write ("<br>");
 for(let posicion=0 ;posicion < series.length; posicion++){
     document.write("<br>Serie: " + series[posicion])
 }
+
+series.splice(3,0,"Sword art online");
+document.write ("<br>");
+for(let posicion=0 ;posicion < series.length; posicion++){
+    document.write("<br>Serie: " + series[posicion])
+}
+// Eliminar elementos de un arreglo
+//Desde la posicion 7, borro un elemento y agrego 0
+series.splice(7,1);
+document.write ("<br>");
+for(let posicion=0 ;posicion < series.length; posicion++){
+    document.write("<br>Serie: " + series[posicion])
+}
+//eliminar todos desde una posicion
+series.splice(3); //borra todo desde la posicion 3
+
