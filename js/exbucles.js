@@ -71,7 +71,7 @@ Si lo introducido no es un número deberá indicarse con un alert y volver a pre
 Deberá de repetirse el proceso hasta que el usuario pulse «cancelar».
 
 
-let dni = prompt("ingrese dni");
+let dni = parseInt(prompt("ingrese dni"));
 
 if ( dni<0 || dni> 999999999){
     alert("ingrese un dni valido")
@@ -177,6 +177,78 @@ for (let index = 30; index >=1; index--) {
 12345
 123456
 ……
-*/
 
 
+let ingreso = parseInt(prompt("ingrese un numero"));
+if (ingreso>50) {
+    alert("ingrese un valor menor");
+}
+else{
+for (let i = 1; i <= ingreso; i++) {
+    for (let j = 0; j < i ;j++) {
+        document.write(i);       
+    }
+    document.write ("<br>");
+}
+}
+9- Crea un script que escriba los números del 1 al 500, que indique cuáles son múltiplos de
+4 y de 9 y que cada 5 líneas muestre una línea horizontal. Por ejemplo :
+1
+2
+3
+4 (Múltiplo de 4)
+5-
+2
+————————————————————-
+6
+7
+8 (Múltiplo de 4)
+9 (Múltiplo de 9)
+10
+
+let numero = parseInt(prompt("ingrese un numero"));
+let n2 = parseInt(prompt("Ingrese un segundo numero"));
+
+
+document.write(numero%4);
+document.write(n2%9);
+for (let i = 1; i <= 500; i++) {
+    document.write("<br>" + i);
+
+    if (i%4 == 0) {
+        document.write("(Multiplo de 4)")
+    }else{
+        if (i%9 ==0){
+            document.write("(Multiplo de 9)")
+        }
+        else{
+            if (i%5 ==0) {
+                document.write("<br>"+"-------------------");
+                
+            }
+        }
+    }
+}
+
+11- Realiza un script que pida por teclado 3 edades y 3 nombres e indique el nombre del
+mayor. 
+let n1 = prompt("indique nombre 1");
+let e1 = parseInt(prompt("ingrese edad 1"));
+let n2 = prompt("indique nombre 2");
+let e2 = parseInt(prompt("ingrese edad 2"));
+let n3 = prompt("indique nombre 3");
+let e3 = parseInt(prompt("ingrese edad 3"));
+if (e1>e2 || e1>e3 || e2>e3) {
+    document.write(e1 ,e2 , e3);
+} else {
+    if (e2>e1 || e2>e3 || e1>e3) {
+        document.write(e2 ,e1, e3);
+    }else{
+        if (e3>e1 || e3>e2 || e2>e1) {
+            document.write(e3, e2 , e1);
+        }
+        
+    }
+}
+
+}*/
